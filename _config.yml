@@ -29,6 +29,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - "reveal.js/test"
+  - "reveal.js/plugin/markdown/example.md"
 
 collections:
     decks:
@@ -38,7 +40,7 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "decks"
       type: "decks"
     values:
       layout: "deck"
