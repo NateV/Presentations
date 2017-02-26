@@ -26,3 +26,6 @@ Github pages does not appear to work with all versions of Jekyll. See this site:
 7. Other kinds of customization will probably be useful.
 
 Now to create a new presentation, simply create your presentation as a series of <section> elements in a markdown file in the "\_decks" directory.
+
+_Useful Resources_
+* [Github's how-to](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#keeping-your-site-up-to-date-with-the-github-pages-gem)
