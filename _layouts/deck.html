@@ -1,13 +1,22 @@
 <!DOCTYPE>
 <html>
     <head>
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/white.css">
+        <link rel="stylesheet" href="{{ "/reveal.js/css/reveal.css" | prepend: site.baseurl }}">
+        {%if page.theme %}
+          <link rel="stylesheet" href="{{ "/reveal.js/css/theme/" | prepend: site.baseurl | append: page.theme | append: '.css' }}" id="theme"/>
+        {% else %}
+          <link rel="stylesheet" href="{{ "/reveal.js/css/theme/white.css" | prepend: site.baseurl }}" id="theme"/>
+        {% endif %}
     </head>
 
     <body>
-        {{ content }}
-        <script src="js/reveal.js"></script>
+        <div class="reveal">
+            <div class="slides">
+                {{ content }}
+            </div>
+        </div>
+        <script src="{{ '/1343518/data-markdown.user.js' | prepend: site.baseurl }}"></script>
+        <script src="{{ "/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
         <script>
             Reveal.initialize();
         </script>
